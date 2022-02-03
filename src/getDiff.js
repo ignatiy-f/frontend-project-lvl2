@@ -1,4 +1,4 @@
-
+import { cwd } from 'process';
 import toBuildAst from './astBuilder.js';
 import toFormatAst from './formatters/index.js';
 import customParse from './parser.js';
@@ -6,7 +6,7 @@ import path from 'path';
 
 
 const parseData = (filepath) => {
-  const fileData = path.resolve(process.cwd(), filepath);
+  const fileData = path.resolve(cwd(), filepath);
   const fileFormat = path.extname(fileData).toLowerCase();
   return customParse(fileData, fileFormat);
 };

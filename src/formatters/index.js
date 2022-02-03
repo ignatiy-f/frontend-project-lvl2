@@ -8,9 +8,10 @@ const toFormatAst = (data, format) => {
       return stylish(data);
     }
 
-    case 'plain': {
+  /*  case 'plain': {
       return plain(data);
     }
+    */
     case 'json': {
       return makeJson(data);
     }
