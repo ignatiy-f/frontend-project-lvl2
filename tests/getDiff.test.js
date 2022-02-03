@@ -6,10 +6,16 @@ import { getStylishResult } from '../__fixtures__/result.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
-const getFixturePath = (filename) => path.join(__dirname, '..', '__fixtures__', filename);
+const getExpectedPath = (filename) => path.join(__dirname, '..', '__fixtures__', filename);
 
 test('diffStylishJson', () => {
-    const fuxture1Path = getFixturePath('file1.json');
-    const fuxture2Path = getFixturePath('file2.json');
-    expect(genDiff(fuxture1Path, fuxture2Path)).toEqual(getStylishResult());
+    const expectedPath1 = getExpectedPath('file1.json');
+    const expectedPath2 = getExpectedPath('file2.json');
+    expect(genDiff(expectedPath1, expectedPath2)).toEqual(getStylishResult());
+  });
+
+test('diffStylishYaml', () => {
+    const expectedPath1 = getExpectedPath('file1.yml');
+    const expectedPath2 = getExpectedPath('file2.yml');
+    expect(genDiff(expectedPath1, expectedPath2)).toEqual(getStylishResult());
   });
