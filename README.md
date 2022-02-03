@@ -10,3 +10,6 @@
 
 ### gendiff.yml
 [![asciicast](https://asciinema.org/a/XUmc2xyyU9Lt58I6HO12VJ7C6.svg)](https://asciinema.org/a/XUmc2xyyU9Lt58I6HO12VJ7C6)
+
+### gendiff stylish
+[![asciicast](https://asciinema.org/a/wUqTe6aqPsS8Bz9g1hzJKQhFR.svg)](https://asciinema.org/a/wUqTe6aqPsS8Bz9g1hzJKQhFR)
