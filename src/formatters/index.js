@@ -1,5 +1,5 @@
 import stylish from './stylish.js';
-//import plain from './plain.js';
+import plain from './plain.js';
 import makeJson from './json.js';
 
 const toFormatAst = (data, format) => {
@@ -7,11 +7,9 @@ const toFormatAst = (data, format) => {
     case 'stylish': {
       return stylish(data);
     }
-
-  /*  case 'plain': {
+    case 'plain': {
       return plain(data);
     }
-    */
     case 'json': {
       return makeJson(data);
     }

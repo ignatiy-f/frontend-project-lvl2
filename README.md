@@ -11,5 +11,8 @@
 ### gendiff.yml
 [![asciicast](https://asciinema.org/a/XUmc2xyyU9Lt58I6HO12VJ7C6.svg)](https://asciinema.org/a/XUmc2xyyU9Lt58I6HO12VJ7C6)
 
-### gendiff stylish
+### gendiff nested
 [![asciicast](https://asciinema.org/a/wUqTe6aqPsS8Bz9g1hzJKQhFR.svg)](https://asciinema.org/a/wUqTe6aqPsS8Bz9g1hzJKQhFR)
+
+### gendiff plain format
+[![asciicast](https://asciinema.org/a/Ido7yHq2YnEesWkifubqmVffe.svg)](https://asciinema.org/a/Ido7yHq2YnEesWkifubqmVffe)
