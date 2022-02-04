@@ -1,3 +1,3 @@
-const makeJson = (dataIn) => JSON.stringify(dataIn);
+const inJson = (data) => JSON.stringify(data);
 
-export default makeJson;
+export default inJson;

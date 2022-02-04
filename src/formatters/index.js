@@ -1,6 +1,6 @@
 import stylish from './stylish.js';
 import plain from './plain.js';
-import makeJson from './json.js';
+import inJson from './json.js';
 
 const toFormatAst = (data, format) => {
   switch (format) {
@@ -11,7 +11,7 @@ const toFormatAst = (data, format) => {
       return plain(data);
     }
     case 'json': {
-      return makeJson(data);
+      return inJson(data);
     }
     default: {
       throw new Error(`formatter "${format}" is not defined`);
