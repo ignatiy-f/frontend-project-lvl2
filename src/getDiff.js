@@ -4,7 +4,6 @@ import toFormatAst from './formatters/index.js';
 import customParse from './parser.js';
 import path from 'path';
 
-
 const parseData = (filepath) => {
   const fileData = path.resolve(cwd(), filepath);
   const fileFormat = path.extname(fileData).toLowerCase();
@@ -19,4 +18,3 @@ const genDiff = (filepath1, filepath2, formatName = 'stylish') => {
 };
 
 export default genDiff;
-
