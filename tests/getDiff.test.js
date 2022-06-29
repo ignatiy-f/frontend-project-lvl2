@@ -1,5 +1,5 @@
 import { test, expect } from '@jest/globals';
-import genDiff from '../src/getDiff.js';
+import genDiff from '../src/getdiff.js';
 import { fileURLToPath } from 'url';
 import path, { dirname } from 'path';
 import { getStylishResult, getPlainResult , getJSformatResult} from '../__fixtures__/result.js';
