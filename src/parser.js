@@ -10,4 +10,4 @@ const customParse = (data, format) => {
   }
   throw new Error('Error: invalid file format');
 };
-  export default customParse;
+export default customParse;
