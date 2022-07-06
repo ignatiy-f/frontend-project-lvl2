@@ -4,18 +4,12 @@
 [![Node CI](https://github.com/ignatiy-f/frontend-project-lvl2/actions/workflows/node.js.yml/badge.svg)](https://github.com/ignatiy-f/frontend-project-lvl2/actions/workflows/node.js.yml)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/7a3fac631a8bb2f0541f/test_coverage)](https://codeclimate.com/github/ignatiy-f/frontend-project-lvl2/test_coverage)
 
-### Difference generator.
+## Difference generator
+
  A "gendiff" is a program that determines the difference between two data structures. This is a popular task for which there are many online services, such as http://www.jsondiff.com/. A similar mechanism is used when outputting tests or when automatically tracking changes in configuration files. Utility features:
  * Support for different input formats: yaml, json
  * Report generation in the form of plain text, stylish and json
 
-This project was built on Hexlet courses for practicing:
-
-* CLI Builder (commander.js)
-* lodash
-* nodejs, FS, path
-* JEST
-* commander
 
 ## Setup
 

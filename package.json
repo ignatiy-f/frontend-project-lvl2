@@ -14,21 +14,24 @@
     "type": "git",
     "url": "git+https://github.com/ignatiy-f/frontend-project-lvl2.git"
   },
-  "author": "",
+  "author": {
+    "name": "Ignatiy Funtikov",
+    "email": "ignatiysecond@gmail.com"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ignatiy-f/frontend-project-lvl2/issues"
   },
   "homepage": "https://github.com/ignatiy-f/frontend-project-lvl2#readme",
   "dependencies": {
-    "@jest/globals": "^28.1.2",
     "commander": "^8.3.0",
-    "eslint-config-airbnb": "^19.0.4",
     "js-yaml": "^4.1.0",
     "lodash": "^4.17.21"
   },
   "devDependencies": {
     "eslint": "^8.18.0",
-    "jest": "^27.4.7"
+    "eslint-config-airbnb": "^19.0.4",
+    "jest": "^27.4.7",
+    "@jest/globals": "^28.1.2"
   }
 }
