@@ -1,3 +1,1 @@
-const inJson = (data) => JSON.stringify(data);
-
-export default inJson;
+export default (data) => JSON.stringify(data);
