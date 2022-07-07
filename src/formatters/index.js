@@ -2,21 +2,17 @@ import stylish from './stylish.js';
 import plain from './plain.js';
 import inJson from './json.js';
 
-const toFormatAst = (data, format) => {
+const parseData = (data, format) => {
   switch (format) {
-    case 'stylish': {
+    case 'stylish':
       return stylish(data);
-    }
-    case 'plain': {
+    case 'plain':
       return plain(data);
-    }
-    case 'json': {
+    case 'json':
       return inJson(data);
-    }
-    default: {
+    default:
       throw new Error(`formatter "${format}" is not defined`);
-    }
   }
 };
 
-export default toFormatAst;
+export default parseData;

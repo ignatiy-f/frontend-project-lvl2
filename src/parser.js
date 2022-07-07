@@ -1,13 +1,16 @@
-import { readFileSync } from 'fs';
 import yaml from 'js-yaml';
 
 const customParse = (data, format) => {
-  if (format === '.json') {
-    return JSON.parse(readFileSync(data));
+  switch (format) {
+    case 'json':
+      return JSON.parse(data);
+    case 'yml':
+      return yaml.load(data);
+    case 'yaml':
+      return yaml.load(data);
+    default:
+      throw new Error('Error: invalid file format');
   }
-  if (format === '.yml' || format === '.yaml') {
-    return yaml.load(readFileSync(data, 'utf8'));
-  }
-  throw new Error('Error: invalid file format');
 };
+
 export default customParse;

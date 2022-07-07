@@ -18,14 +18,14 @@ const readFile = (filename) => readFileSync(getExpectedPath(filename), 'utf-8');
 
 test.each(formats)('Compare files', (extension, format) => {
   const expected = readFile(`result-${format}.txt`);
-  const expectedPath1 = getExpectedPath(`file1.${extension}`);
-  const expectedPath2 = getExpectedPath(`file2.${extension}`);
-  const actual = genDiff(expectedPath1, expectedPath2, format);
+  const path1 = getExpectedPath(`file1.${extension}`);
+  const path2 = getExpectedPath(`file2.${extension}`);
+  const actual = genDiff(path1, path2, format);
   expect(actual).toEqual(expected);
 });
 
 test('toThrow', () => {
-  const expectedPath1 = getExpectedPath('file1.json');
-  const expectedPath2 = getExpectedPath('file2.pdf');
-  expect(() => genDiff(expectedPath1, expectedPath2, 'json')).toThrowError('Error: invalid file format');
+  const path1 = getExpectedPath('file1.json');
+  const path2 = getExpectedPath('file2.pdf');
+  expect(() => genDiff(path1, path2, 'json')).toThrowError();
 });
